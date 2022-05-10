@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SaveData</title>
+</head>
+<body>
+    <h1>ADD MATCH RESULT</h1>
+   
+    <div> 
+        <form action="Savedata/SaveData" method="post">
+            <table border="1" bgcolor="green" height="300" width="300">
+                <tr>
+                    <td>BUS ID</td>
+                    <td><input type="number" name="busid" required /></td>
+                </tr>
+
+                <tr>
+                    <td>Boarding Point</td>
+                    <td><input type="text" name="boardingpoint" required/></td>
+                </tr>
+                <tr>
+                    <td>Travel Date</td>
+                    <td><input type="text" name="traveldate" required/></td>
+                </tr>
+                <tr>
+                    <td>Amount</td>
+                    <td><input type="text" name="amount" /></td>
+                </tr>
+                <tr>
+                    <td>Rating</td>
+                    <td><input type="number" name="rating" required/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="ADD MATCH" /></td>
+                </tr>
+
+            </table>
+            @ViewBag.result
+        </form>
+
+    </div>
+</body>
+</html>
